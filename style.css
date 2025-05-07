@@ -1,0 +1,37 @@
+/* Define the basic styles */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+  }
+  
+  /* Define light and dark themes */
+  .light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Define animation */
+  @keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(300px); }
+  }
+  
+  /* Initial style for the box */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px;
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Animation class that is added by JavaScript */
+  .animate {
+    animation: moveRight 2s ease-in-out forwards;
+  }
+  
